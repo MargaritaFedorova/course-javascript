@@ -12,7 +12,9 @@
 
  Другими словами: функция должна возвращать в неизменном виде то, что поступает ей на вход
  */
-function returnFirstArgument(value) {}
+function returnFirstArgument(value) {
+  return value;
+}
 
 /*
  Задание 2:
@@ -26,9 +28,11 @@ function returnFirstArgument(value) {}
  2.2 *: Значение по умолчанию для второго аргумента должно быть равно 100
 
  Пример:
-   sumWithDefaults(10) вернет 110
+   sumWithDefaults(1, 3) вернет 110
  */
-function sumWithDefaults(a, b) {}
+function sumWithDefaults(a, b = 100) {
+  return a + b;
+}
 
 /*
  Задание 3:
